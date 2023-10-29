@@ -1,0 +1,16 @@
+
+Hierarchy --
+
+Tabbar
+    navigation
+        viewcontroller
+            segmented control
+            viewcontainer
+                pageviewController.view
+                    3 viewControllers attached to 3 segments
+            
+
+
+
+learnings = Use of viewcontainer, pageviewcontroller, attach vc to segments
+

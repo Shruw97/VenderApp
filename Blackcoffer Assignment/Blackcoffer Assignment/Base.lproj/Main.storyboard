@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jzi-LC-u7Z">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Blackcoffer_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1092" y="-354"/>
+        </scene>
+        <!--Network-->
+        <scene sceneID="2rX-WD-hdn">
+            <objects>
+                <viewController id="4Mh-gC-vAF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cl7-vf-BaR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jUW-GZ-Vi5"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Network" image="point.3.connected.trianglepath.dotted" catalog="system" selectedImage="point.3.filled.connected.trianglepath.dotted" id="6x7-Sn-OKe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQr-ve-6nf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="342"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="DK3-DA-S7Q">
+            <objects>
+                <viewController storyboardIdentifier="ExploreViewController" id="SAA-sr-uce" customClass="ExploreViewController" customModule="Blackcoffer_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tNk-0A-q6E">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="luq-WA-aEh">
+                                <rect key="frame" x="0.0" y="103" width="393" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="6vo-lP-BbE"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Personal"/>
+                                    <segment title="Business"/>
+                                    <segment title="Merchant"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentBarCLicked:" destination="SAA-sr-uce" eventType="valueChanged" id="Q7u-m0-5GJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROA-52-GdM">
+                                <rect key="frame" x="0.0" y="156" width="393" height="613"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lei-yB-4TJ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="luq-WA-aEh" firstAttribute="leading" secondItem="Lei-yB-4TJ" secondAttribute="leading" id="0dP-zN-jDw"/>
+                            <constraint firstItem="Lei-yB-4TJ" firstAttribute="bottom" secondItem="ROA-52-GdM" secondAttribute="bottom" id="8Zx-po-N1d"/>
+                            <constraint firstItem="ROA-52-GdM" firstAttribute="top" secondItem="luq-WA-aEh" secondAttribute="bottom" constant="8" symbolic="YES" id="F2g-I0-9Bx"/>
+                            <constraint firstItem="luq-WA-aEh" firstAttribute="top" secondItem="Lei-yB-4TJ" secondAttribute="top" id="G4Y-aC-9vo"/>
+                            <constraint firstItem="Lei-yB-4TJ" firstAttribute="trailing" secondItem="ROA-52-GdM" secondAttribute="trailing" id="IYM-mT-fJ4"/>
+                            <constraint firstItem="Lei-yB-4TJ" firstAttribute="trailing" secondItem="luq-WA-aEh" secondAttribute="trailing" id="iP7-SB-JTt"/>
+                            <constraint firstItem="ROA-52-GdM" firstAttribute="leading" secondItem="Lei-yB-4TJ" secondAttribute="leading" id="zdL-kP-2Gt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Explore" selectedImage="eye.fill" catalog="system" id="ddw-f6-OXL">
+                        <imageReference key="image" image="eye" catalog="system" renderingMode="original"/>
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="16j-uM-xEJ">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.3.horizontal" catalog="system" id="7V2-L9-Ac2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Refine" image="checklist" catalog="system" style="plain" id="zvV-bG-9SL">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="goToRefine:" destination="SAA-sr-uce" id="Y0u-La-S0e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="containerView" destination="ROA-52-GdM" id="FgV-Ff-Txd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNE-Oa-1Ol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1251.145038167939" y="-354.22535211267609"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="MRI-kz-1HC">
+            <objects>
+                <navigationController id="3ka-EC-KTh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="V1O-JZ-yjU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kak-9E-ypU">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.082352943720000002" green="0.1764705926" blue="0.2470588088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SAA-sr-uce" kind="relationship" relationship="rootViewController" id="t71-lB-dso"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBc-Xi-5PJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="-354"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uMw-eh-P80">
+            <objects>
+                <tabBarController id="Jzi-LC-u7Z" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="sTe-7k-bvU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3ka-EC-KTh" kind="relationship" relationship="viewControllers" id="QTk-gg-9hD"/>
+                        <segue destination="4Mh-gC-vAF" kind="relationship" relationship="viewControllers" id="XQx-4F-wcL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12z-Z1-tzf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checklist" catalog="system" width="128" height="107"/>
+        <image name="eye" catalog="system" width="128" height="79"/>
+        <image name="eye.fill" catalog="system" width="128" height="80"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="point.3.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
+        <image name="point.3.filled.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

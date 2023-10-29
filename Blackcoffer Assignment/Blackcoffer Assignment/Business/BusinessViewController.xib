@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessViewController" customModule="Blackcoffer_Assignment" customModuleProvider="target">
+            <connections>
+                <outlet property="businessProfilesTableView" destination="ppw-5U-8Fh" id="xRq-xd-gRQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="PSa-fL-hZd">
+                    <rect key="frame" x="0.0" y="59" width="334" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Qsc-ql-d8D"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="AVm-4b-JYh"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVu-Mo-QS8">
+                    <rect key="frame" x="334" y="70" width="51" height="34.333333333333343"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" red="0.082352943720000002" green="0.1764705926" blue="0.2470588088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="line.3.horizontal.decrease" catalog="system"/>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ppw-5U-8Fh">
+                    <rect key="frame" x="0.0" y="115" width="393" height="693"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ppw-5U-8Fh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0Wc-8N-awW"/>
+                <constraint firstItem="PSa-fL-hZd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7wU-df-cna"/>
+                <constraint firstItem="GVu-Mo-QS8" firstAttribute="leading" secondItem="PSa-fL-hZd" secondAttribute="trailing" id="JKR-OI-C37"/>
+                <constraint firstItem="PSa-fL-hZd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="U9I-2s-YAG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ppw-5U-8Fh" secondAttribute="trailing" id="V5B-uA-ZlH"/>
+                <constraint firstItem="ppw-5U-8Fh" firstAttribute="top" secondItem="PSa-fL-hZd" secondAttribute="bottom" id="ZKQ-K3-G7X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ppw-5U-8Fh" secondAttribute="bottom" constant="10" id="iVq-5u-EUF"/>
+                <constraint firstItem="GVu-Mo-QS8" firstAttribute="centerY" secondItem="PSa-fL-hZd" secondAttribute="centerY" id="p48-2Z-n9I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GVu-Mo-QS8" secondAttribute="trailing" constant="8" id="ynX-9u-5Zc"/>
+            </constraints>
+            <point key="canvasLocation" x="129.00763358778624" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line.3.horizontal.decrease" catalog="system" width="128" height="73"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
